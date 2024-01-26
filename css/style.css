@@ -1,89 +1,112 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 /* General Styles */
 *{
     padding: 0;
     margin: 0;
-    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Mochiy Pop One', sans-serif;
     list-style: none;
-    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
 }
 
+/* #ff702a */
+
+
+/* General Options */
 html{
-    background-color: #112;
+    background: #112;
 }
 
 body{
-    width: 1000px;
-    height: 10000px;
-    margin: 0px auto;
-    border: 1px solid orange;
+    color: #fff;
+    background-color: #112;
 }
 
-/* header */
-#header{
-    display: flex;
+
+/* Header */
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
     width: 100%;
-    height: max-content;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-#header h2{
-    margin-left: 50px;
-    margin-top: 20px;
-    font-size: 30px;
-    color: #ff702a;
-}
-
-#header ul{
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 120px;
+    background-color: #112;
 }
 
-#header ul li{
-    margin: 20px;
-    margin-top:30px;
-    margin-right: 40px;
-    color: white;
+.logo{
+    color: #ff702a;
+    font-weight: 600px;
+    font-size: 2.3rem;
 }
 
-#header ul li a{
-    color: white;
-    font-size: 20px;
+.barra{
+    display: flex;
+}
+.barra a{
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 20px;
+    font-weight: 300;
+    transition: 150ms;
+}
+.barra a:hover{
+    color: #ff702a;
+    font-size: 1.2rem;
 }
 
 /* Home */
 #home{
     display: flex;
-    margin: 50px;
-    height: max-content;
-    margin-left: 150px;
-    margin-top: 100px ;
-    justify-content: flex-start;
+    align-items: center;
+    margin: 200px;
 }
-
-#home #caja-home{
-    font-size: 30px;
+#home #caja-home h1{
+    font-size: 5.0rem;
     color: #ff702a;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
 }
-
 #home #caja-home p{
+    font-size: 1.5rem;
+    color: #fff;
+}
+#home #caja-home button{
+    width: 40%;
+    padding: 20px;
+    font-weight: 700;
     font-size: 20px;
-    text-align: center;
-    font-weight: 20px;
-    font-style: oblique;
-    color: white;
+    background: #ff702a;
+    color: #fff;
+    border-radius: 100px;
+    border: 1px solid #ff702a;
+    transition: all 100ms;
+}
+#home #caja-home button:hover{
+    box-shadow: 0px 0px 20px white;
+}
+#home #caja-home button:active{
+    font-size: 15px;
+}
+#home .imagen{
+    margin-left: 100px;
+    padding-left: 200px;
+    width: 50%;
+    height: 400px;
 }
 
-#home #caja-home input{
-    margin-left: 30px;
-    margin-top: 30px;
-    width: 40%;
-    height: 30%;
-    background-color: #ff702a;
-    color: white;
-    border-radius: 15px;
-    box-shadow: 0px 0px 5px lightslategray;
+#home .imagen img{
+    max-width: 100%;
+}
+
+@media (max-width:500px) {
+    .barra{
+        display: none;
+    }
+
+    header{
+        padding: 30px 20px;
+    }
+
+    
 }
