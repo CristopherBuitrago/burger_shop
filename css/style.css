@@ -3,110 +3,227 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Mochiy Pop One', sans-serif;
+    font-family: 'Permanent Marker', cursive;
+    scroll-behavior: smooth;
     list-style: none;
     text-decoration: none;
 }
 
-/* #ff702a */
-
-
-/* General Options */
-html{
-    background: #112;
-}
+/* main color: #ff702a */
+/* Texts colors: white */
+/* background: #1e1c2a */
 
 body{
-    color: #fff;
-    background-color: #112;
+    color: white;
+    background: #1e1c2a ;
 }
 
+section{
+    padding: 70px 17%;
+}
 
-/* Header */
+/* HEader */
 header{
-    position: fixed;
+    position: fixed; /* Cuando bajemos con scroll, el header también lo hará */
     top: 0;
     right: 0;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px 120px;
-    background-color: #112;
+    padding: 20px 120px;
+    background: #1e1c2a; 
 }
 
 .logo{
     color: #ff702a;
-    font-weight: 600px;
-    font-size: 2.3rem;
+    font-weight: 900;
+    font-size: 2.5rem;
+    text-shadow: 0px 0px 30px#f89564;
 }
 
-.barra{
+.barra-navegacion{
     display: flex;
 }
-.barra a{
-    color: #fff;
-    font-size: 1rem;
+.barra-navegacion a{
+    color: whitesmoke;
+    font-size: 1.3rem;
     padding: 10px 20px;
-    font-weight: 300;
-    transition: 150ms;
+    text-shadow: 0px 0px 30px#ffffff;
+    transition: color 10s;
+    transition: font-size 150ms;
 }
-.barra a:hover{
-    color: #ff702a;
-    font-size: 1.2rem;
+.barra-navegacion a:hover{
+    font-size: 2rem;
+    font-weight: 900;
+    color: #f89564;
 }
 
-/* Home */
-#home{
-    display: flex;
-    align-items: center;
-    margin: 200px;
-}
-#home #caja-home h1{
-    font-size: 5.0rem;
-    color: #ff702a;
-    width: 100%;
-}
-#home #caja-home p{
+#menu-icon{
+    display: none ;
+    cursor: pointer;
     font-size: 1.5rem;
-    color: #fff;
-}
-#home #caja-home button{
-    width: 40%;
-    padding: 20px;
-    font-weight: 700;
-    font-size: 20px;
-    background: #ff702a;
-    color: #fff;
-    border-radius: 100px;
-    border: 1px solid #ff702a;
-    transition: all 100ms;
-}
-#home #caja-home button:hover{
-    box-shadow: 0px 0px 20px white;
-}
-#home #caja-home button:active{
-    font-size: 15px;
-}
-#home .imagen{
-    margin-left: 100px;
-    padding-left: 200px;
-    width: 50%;
-    height: 400px;
 }
 
-#home .imagen img{
+/* HOME */
+#home{
+    width: 100%;
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.3rem;
+    align-items: center;
+}
+
+#home .image img{
+    width: 700px;
     max-width: 100%;
+    height: auto;
 }
 
-@media (max-width:500px) {
-    .barra{
-        display: none;
-    }
+#home .text h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    font-size: 4.5rem;
+    color: #ff8143;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow:-1px 0px 1px #bb3e00,
+                -2px 0px 1px #bb3e00,
+                -3px 0px 1px #bb3e00,
+                -4px 0px 1px #bb3e00,
+                -5px 0px 1px #bb3e00,
+                -6px 0px 1px #bb3e00,
+                -7px 0px 1px #bb3e00,
+                -8px 0px 1px #bb3e00,
+                -9px 0px 1px #bb3e00,
+                -10px 0px 1px #bb3e00,
+                -11px 0px 1px #bb3e00,
+                -12px 0px 1px #bb3e00,
+                -13px 0px 1px #bb3e00,
+                -14px 0px 1px #bb3e00,
+                -15px 0px 1px #bb3e00,
+                -16px 0px 1px #bb3e00,
+                -18px 0px 6px rgba(0, 0, 0, 0.4),
+                -22px 0px 10px rgba(0, 0, 0, 0.5),
+                -25px 0px 35px rgba(0, 0, 0, 0.5),
+                -30px 0px 60px rgba(0, 0, 0, 0.5);               
+}
+#home .text h2{
+    font-size: 2rem;
+    margin: 100px 0 30px;
+}
 
-    header{
-        padding: 30px 20px;
-    }
+#home .text button{
+    padding: 1rem 2rem;
+    font-weight: 10;
+    font-size: 1.5rem;
+    border: #ff8143;
+    border-radius: 100px;
+    color: aliceblue;
+    background: #ff702a;
+}
+#home .text button:hover{
+    box-shadow: 0px 0px 20px #f89564;
+}
+#home .text button:active{
+    box-shadow: none;
+}
 
-    
+/* About */
+#about{
+    width: 100%;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 5rem;
+    align-items: center;
+}
+
+#about .text-about span{
+    color: #ff702a;
+}
+
+#about .text-about h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2.5rem;
+    margin: 10px 0 30px;
+    color: azure;
+    text-shadow: 0px 0px 20px#ffffff;
+}
+
+#about .text-about p{
+    font-size: 1rem;
+    margin: 25px 0 30px;
+}
+
+#about .text-about button{
+    padding: 1rem 2rem;
+    font-weight: 10;
+    font-size: 1.5rem;
+    border: #ff8143;
+    border-radius: 100px;
+    color: aliceblue;
+    background: #ff702a;
+}
+#about .text-about button:hover{
+    box-shadow: 0px 0px 20px #f89564;
+}
+#about .text-about button:active{
+    box-shadow: none;
+}
+
+/* Menu */
+.text-menu{
+    text-align: center;
+}
+.text-menu span{
+    color: #ff702a;
+}
+.text-menu h1{
+    font-size: 4rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0px 0px 20px #f89564;
+}
+
+.container-letters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-letters > * {
+    min-width: 220px;
+    flex-grow: 1;
+    margin: 0.75rem;
+}
+
+.container-letters .caja{
+    position: relative;
+    margin-top: 4rem;
+    height: auto;
+    background: bisque;
+    padding: 20px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.imagen-caja{
+    width:100%;
+    height: 100%;
+}
+
+.caja h1{
+    font-size: 1.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #1e1c2a;
+}
+
+.caja h2{
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 4px 0 15px;
+    color: #1e1c2a;
 }

@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <title>Hamburguesas</title>
 </head>
 <body>
     <!-- Header -->
     <header>
         <a href="#" class="logo">Foods</a>
-        <ul class="barra">
+            <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="barra-navegacion">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#menu">Menu</a></li>
@@ -24,21 +26,85 @@
 
     <!-- Home -->
     <section id="home">
-        <div id="caja-home">
-            <h1>Full Website</h1><br>
-            <p>Foods the</p>
-            <p>most precius thing</p><br>
+        <div class="text">
+            <h1>Hamburguers <br> Don Pipe</h1>
+            <h2>What <br>thing more berraca</h2>
             <button>Today's menu</button>
         </div>
-        <div class="imagen">
-            <img src="images/home.png" alt="home">
+
+        <div class="image">
+            <img src="images/home.png" alt="imagen de home">
         </div>
     </section>
 
+    <!-- About -->
+    <section id="about">
+        <div class="image">
+            <img src="images/about.png" alt="Imagen de about">
+        </div>
 
-    <section id="about"></section>
-    <section id="menu"></section>
-    <section id="services"></section>
-    <section id="contact"></section>
+        <div class="text-about">
+            <span>About us</span>
+            <h2>We make the best hamburguers that you never was probe it.</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, minima id veniam quaerat quidem ipsam fugit? Sed officiis illo, amet doloremque, accusantium</p>
+            <button>Learn More</button>
+        </div>
+    </section>
+
+    <!-- Menu -->
+    <section id="menu">
+        <div class="text-menu">
+            <span>Food Menu</span>
+            <h1>Fresh taste and grat price</h1>
+        </div>
+
+        <div class="container-letters">
+            <div class="caja">
+                <div class="imagen-caja">
+                <img src="images/food1.png" alt="Alimento 1">
+                </div>
+                <div class="product-description">
+                    <h1>Chicken hamburger</h1>
+                    <h2>Tasty Food</h2>
+                    <span>500COP</span>
+                    <i class='bx bx-cart'></i>
+                </div>
+            </div>
+
+            <div class="caja">
+                <div class="imagen-caja">   
+                <img src="images/food2.png" alt="Alimento 2">
+                </div>
+                <div class="product-description">
+                    <h1>Chulo hamburger</h1>
+                    <h2>Tasty Food</h2>
+                    <span>1.000.000COP</span>
+                    <i class='bx bx-cart'></i>
+                </div>
+            </div>
+
+            <div class="caja">
+                <div class="imagen-caja">
+                <img src="images/food3.png" alt="Alimento 3">
+                </div>
+                <div class="product-description">
+                    <h1>Chulo Thigh</h1>
+                    <h2>Tasty Food</h2>
+                    <span>1.000COP</span>
+                    <i class='bx bx-cart'></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+
+    </section>
 </body>
 </html>
