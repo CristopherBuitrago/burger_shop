@@ -7,6 +7,7 @@
     scroll-behavior: smooth;
     list-style: none;
     text-decoration: none;
+    z-index: 0;
 }
 
 /* main color: #ff702a */
@@ -32,7 +33,8 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 20px 120px;
-    background: #1e1c2a; 
+    background: #1e1c2a;
+    z-index: 100;
 }
 
 .logo{
@@ -197,7 +199,7 @@ header{
 .container-letters > * {
     min-width: 220px;
     flex-grow: 1;
-    margin: 0.75rem;
+    margin: 1rem;
 }
 
 .container-letters .caja{
@@ -206,7 +208,7 @@ header{
     height: auto;
     background: bisque;
     padding: 20px;
-    border-radius: 50px;
+    border-radius: 15px;
     text-align: center;
 }
 
@@ -226,4 +228,133 @@ header{
     font-weight: 600;
     margin: 4px 0 15px;
     color: #1e1c2a;
+}
+
+.caja span{
+    font-size: 1rem;
+    color: #ff702a;
+}
+
+.caja .bx{
+    background-color: #ff702a;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 1.5rem;
+    padding: 10px 10px;
+    border-radius: 15px;
+}
+
+.caja .bx:hover{
+    cursor: pointer;
+}
+
+/* Services */
+.text-services{
+    text-align: center;
+}
+
+.text-services span{
+    color: #ff702a;
+    font-weight: 600;
+}
+
+.text-services h1{
+    font-size: 4rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0px 0px 20px #ff8143;
+}
+
+.container-services{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    grid-gap: 1.5rem;
+    margin-top: 4rem;
+}
+
+.caja .imagen-service{
+    padding: 20px 30px;
+    text-align: center;
+}
+
+.caja .imagen-service img{
+    width: 90px;
+}
+
+.service-description{
+    text-align: center;
+    padding: 5px 30px;
+}
+
+.service-description h2{
+    font-size: 1.5rem;
+    color: #ff702a;
+}
+
+/* Service second container */
+.service-container2{
+    background: #feeee7;
+    padding: 70px 0;
+    text-align: center;
+    width: 66%;
+    margin: 100px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px #ff8143;
+}
+
+.service-container2 h2{
+    font-weight: bold;
+    font-size: 3rem;
+    color: #1e1c2a;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.service-container2 button{
+    padding: 20px 40px;
+    margin-top: 5%;
+    font-size: 1rem;
+    font-weight: 200;
+    background-color: #ff702a ;
+    border-radius: 15px;
+    border: 2px solid #ff702a;
+}
+.service-container2 button:hover{
+    box-shadow: 0px 0px 20px #ff8143;
+}
+.service-container2 button:active{
+    box-shadow: none;
+}
+
+/* Contact */
+.container-footer{
+    display: flex;
+    padding: 30px 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.container-footer .content-foot h2 {
+    font-size: 1.6rem;
+    padding: 30px 0px;
+    color: #ff702a;
+    text-shadow: 0px 0px 20px #ff8143;
+    animation: blinkTextShadow 500ms infinite alternate;
+}
+
+@keyframes blinkTextShadow {
+    0% {
+        text-shadow: 0px 0px 20px #ff8143;
+    }
+    100% {
+        text-shadow: 0px 0px 20px transparent;
+    }
+}
+
+.container-footer .content-foot ul li a{
+    color: whitesmoke;
+    font-size: 1.2rem;
+}
+.container-footer .content-foot ul li a:hover{
+    font-size: 1.5rem;
+    text-shadow: 0px 0px 20px#ff8143;
 }
