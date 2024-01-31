@@ -359,3 +359,72 @@ header{
     font-size: 1.5rem;
     text-shadow: 0px 0px 20px#ff8143;
 }
+
+.container-footer .contact-us facebook, instagram, whatsaap{
+    width: min-content;
+}
+
+#contact-links{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 3rem;
+}
+
+
+/* Home responsive */
+@media screen and (max-width: 500px) {
+    #home {
+        grid-template-columns: 1fr; /* Cambiar a una sola columna en pantallas pequeñas */
+        text-align: center; /* Centrar el contenido */
+        padding-left: ;
+    }
+
+    #home .text h1 {
+        font-size: 3.5rem; /* Tamaño del título reducido para pantallas pequeñas */
+        margin: 30px 0; /* Ajuste de margen */
+    }
+
+    #home .text h2 {
+        font-size: 1.8rem; /* Tamaño del h2 ajustado para pantallas pequeñas */
+        margin: 20px 0; /* Ajuste de margen */
+    }
+
+    #home .text button {
+        padding: 0.8rem 1.5rem; /* Ajuste del tamaño del botón */
+        font-size: 1.2rem; /* Ajuste del tamaño de fuente del botón */
+        margin-bottom: 20px; /* Agregado de margen inferior al botón */
+    }
+
+    #home .image img {
+        margin-top: 20px; /* Margen superior para separar la imagen del botón */
+    }
+}
+
+/* about responsive */
+@media screen and (max-width: 500px) {
+    #about {
+        grid-template-columns: 1fr; /* Cambiar a una sola columna en pantallas pequeñas */
+        text-align: center; /* Centrar el contenido */
+        height: auto; /* Ajuste de altura automática para adaptarse al contenido */
+        padding-left: 10px;
+    }
+
+    #about .text-about{
+        order: 1;
+    }
+
+    #about .text-about h2 {
+        font-size: 2rem; /* Tamaño del h2 ajustado para pantallas pequeñas */
+        margin: 10px 0 20px; /* Ajuste de margen */
+    }
+
+    #about .text-about p {
+        font-size: 1rem; /* Tamaño del párrafo ajustado para pantallas pequeñas */
+        margin: 15px 0 20px; /* Ajuste de margen */
+    }
+
+    #about .text-about button {
+        padding: 0.8rem 1.5rem; /* Ajuste del tamaño del botón */
+        font-size: 1.2rem; /* Ajuste del tamaño de fuente del botón */
+    }
+}
