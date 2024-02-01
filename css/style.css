@@ -459,4 +459,18 @@ header{
     .service-container2 h2{
         font-size: 20px;
     }
+
+    .container-footer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container-footer .content-foot h2{
+        font-size: 3rem  ;
+    }
+
+    .container-footer .content-foot ul li a{
+        font-size: 2rem;
+    }
 }
