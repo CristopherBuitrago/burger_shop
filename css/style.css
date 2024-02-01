@@ -47,6 +47,7 @@ header{
 .barra-navegacion{
     display: flex;
 }
+
 .barra-navegacion a{
     color: whitesmoke;
     font-size: 1.3rem;
@@ -371,60 +372,91 @@ header{
 }
 
 
-/* Home responsive */
-@media screen and (max-width: 500px) {
-    #home {
-        grid-template-columns: 1fr; /* Cambiar a una sola columna en pantallas pequeñas */
-        text-align: center; /* Centrar el contenido */
-        padding-left: ;
-    }
-
-    #home .text h1 {
-        font-size: 3.5rem; /* Tamaño del título reducido para pantallas pequeñas */
-        margin: 30px 0; /* Ajuste de margen */
-    }
-
-    #home .text h2 {
-        font-size: 1.8rem; /* Tamaño del h2 ajustado para pantallas pequeñas */
-        margin: 20px 0; /* Ajuste de margen */
-    }
-
-    #home .text button {
-        padding: 0.8rem 1.5rem; /* Ajuste del tamaño del botón */
-        font-size: 1.2rem; /* Ajuste del tamaño de fuente del botón */
-        margin-bottom: 20px; /* Agregado de margen inferior al botón */
-    }
-
-    #home .image img {
-        margin-top: 20px; /* Margen superior para separar la imagen del botón */
+@media (max-width: 1500px) {
+    header{
+        padding: 15px 40px;
     }
 }
 
-/* about responsive */
-@media screen and (max-width: 500px) {
-    #about {
-        grid-template-columns: 1fr; /* Cambiar a una sola columna en pantallas pequeñas */
-        text-align: center; /* Centrar el contenido */
-        height: auto; /* Ajuste de altura automática para adaptarse al contenido */
-        padding-left: 10px;
+@media (max-width: 1100px) {
+    section{
+        padding: 50px 8%;
+    }   
+    
+    #menu-icon{
+        display: initial;
+        color: #ffffff; 
     }
 
-    #about .text-about{
-        order: 1;
+    header .barra-navegacion{
+        position: absolute;
+        top: -400px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: #2b2640;
+        transition: 3s;
+    }
+    header .barra-navegacion.active{
+        top:70px;
+    }
+    .barra-navegacion a{
+        padding: 1.5rem;
+        display: block;
     }
 
-    #about .text-about h2 {
-        font-size: 2rem; /* Tamaño del h2 ajustado para pantallas pequeñas */
-        margin: 10px 0 20px; /* Ajuste de margen */
+}
+
+@media (max-width:780px) {
+    header{
+        padding: 10px 16px;
     }
 
-    #about .text-about p {
-        font-size: 1rem; /* Tamaño del párrafo ajustado para pantallas pequeñas */
-        margin: 15px 0 20px; /* Ajuste de margen */
+    body{
+        width: min-content;
+        display: grid;
+        grid-template-columns: 1fr;
     }
 
-    #about .text-about button {
-        padding: 0.8rem 1.5rem; /* Ajuste del tamaño del botón */
-        font-size: 1.2rem; /* Ajuste del tamaño de fuente del botón */
+    #home{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: min-content + 30px;
+
+        margin-top: 30px;
+        text-align: center;
+        font-size: 10px;
+    }
+
+    #about{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: min-content;
+
+        margin-top: 30px;
+        text-align: center;
+        font-size: 20px;
+    }
+    #about .image-about{
+        order: 2;
+    }
+
+    #menu{
+        margin-top: 500px;
+    }
+
+    #services{
+        font-size: 1.5rem;
+    }
+
+    .service-container2{
+        width: 100%;
+        margin-left: 20px;
+    }
+
+    .service-container2 h2{
+        font-size: 20px;
     }
 }
