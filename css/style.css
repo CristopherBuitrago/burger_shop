@@ -378,10 +378,10 @@ header{
     }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1400px) {
     section{
         padding: 50px 8%;
-    }   
+    }
     
     #menu-icon{
         display: initial;
@@ -397,7 +397,7 @@ header{
         flex-direction: column;
         text-align: center;
         background-color: #2b2640;
-        transition: 3s;
+        transition: 1s;
     }
     header .barra-navegacion.active{
         top:70px;
@@ -407,9 +407,13 @@ header{
         display: block;
     }
 
+    #home{
+        padding-left: 40px;
+    }
+
 }
 
-@media (max-width:780px) {
+@media (max-width:1000px) {
     header{
         padding: 10px 16px;
     }
@@ -418,12 +422,14 @@ header{
         width: min-content;
         display: grid;
         grid-template-columns: 1fr;
+        margin-left: 80px;
     }
 
     #home{
         display: grid;
         grid-template-columns: 1fr;
-        width: min-content + 30px;
+        width: min-content + 20px;
+        padding-left: 0;
 
         margin-top: 30px;
         text-align: center;
@@ -451,9 +457,15 @@ header{
         font-size: 1.5rem;
     }
 
+    .container-services{
+        display: grid;
+        grid-template-columns: 1fr;
+        font-size: 40px;
+    }
+
     .service-container2{
         width: 100%;
-        margin-left: 20px;
+        margin-left: -20px;
     }
 
     .service-container2 h2{
