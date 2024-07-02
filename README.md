@@ -1,8 +1,8 @@
-# Burger Shop
+# Burger Shop 🍔
 
 Welcome to the Burger Shop project! This project is a web application designed to simulate an online burger restaurant where users can browse the menu, customize their orders, and place them online.
 
-## Table of Contents
+## Table of Contents 📋
 
 - [Project Overview](#project-overview)
 - [Features](#features)
@@ -14,11 +14,11 @@ Welcome to the Burger Shop project! This project is a web application designed t
 - [Acknowledgments](#acknowledgments)
 - [Link](#link)
 
-## Project Overview
+## Project Overview 👁️
 
 Burger Shop is a modern and responsive web application that offers a seamless user experience for ordering delicious burgers. The project showcases the capabilities of HTML, CSS, and JavaScript to create an interactive and engaging user interface.
 
-## Features
+## Features 🏆
 
 - **Responsive Design**: The application is designed to be fully responsive, ensuring it works smoothly on all devices, including desktops, tablets, and mobile phones.
 - **Customizable Orders**: Users can customize their burgers by selecting different ingredients and toppings.
@@ -26,20 +26,20 @@ Burger Shop is a modern and responsive web application that offers a seamless us
 - **Order Summary**: Users can view a summary of their orders before placing them.
 - **Online Ordering**: Simulates an online ordering system for users to place their burger orders.
 
-## Technologies Used
+## Technologies Used 👨🏼‍💻
 
 - **HTML5**: For structuring the content on the web.
 - **CSS3**: For styling and layout.
 - **JavaScript**: For interactivity and dynamic content.
 - **Netlify**: For deploying the web application.
 
-## Getting Started
+## Getting Started ▶️
 
 To get a local copy up and running, follow these simple steps.
 
-### Installation
+### Installation ⬇️
 
-1. **Clone the repository:**
+1. **Clone the repository:** 
 
    ```bash
    git clone https://github.com/cristopherbuitrago/proyecto_http_css.git
@@ -57,7 +57,7 @@ To get a local copy up and running, follow these simple steps.
    open index.html
    ```
 
-### Usage
+### Usage 👷🏼
 
 1. **Browse the Menu:**
    - Navigate through the burger menu to see the available options.
@@ -68,7 +68,7 @@ To get a local copy up and running, follow these simple steps.
 3. **Place Your Order:**
    - Review your order summary and simulate placing your order.
 
-## Contributing
+## Contributing ❤️‍🩹
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
@@ -79,12 +79,12 @@ Contributions are what make the open source community such an amazing place to l
 5. Open a Pull Request
 
 
-## Acknowledgments
+## Acknowledgments 🫂
 
 - Thanks to all the developers who contributed to the technologies used in this project.
 - Special thanks to the open-source community for their continuous support and contributions.
 
-## Link
+## Link 🧵
 
 Visit the live project [here](https://the-burguer-shop.netlify.app).
 
